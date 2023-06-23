@@ -1,0 +1,226 @@
+.newme {
+    .instruction {
+        padding: 20px 0px;
+        color: #fff;
+        background: #769EAD;
+
+        h2.title {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 8px;
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            grid-gap: 6px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: start;
+            justify-self: start;
+            gap: 16px;
+
+            &-num {
+                font-weight: 700;
+                font-size: 30px;
+            }
+
+            &-text {
+                font-size: 16px;
+            }
+
+            
+            &-title {
+                font-weight: 700;
+            }
+
+            &-icon {
+                width: 36px;
+                object-fit: contain;
+                object-position: center top;
+            }
+        }
+
+        &-desc {
+            font-size: 10px;
+            margin: 6px 0px 0px;
+        }
+
+        &-stickers {
+            padding: 18px 18px 10px;
+            background: rgba($color: #fff, $alpha: 0.3);
+            border-radius: 9px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 8px 12px;
+            flex-wrap: wrap;
+
+            &-img {
+                max-width: 34px;
+            }
+
+            &-text {
+                flex: 0 0 calc(100% - 34px - 12px);
+                font-size: 14px;
+            }
+
+            &-title {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .button {
+                flex: 0 0 100%
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .newme {
+        .instruction {
+            padding: 32px 0px;
+    
+            h2.title {
+                font-size: 36px;
+                margin-bottom: 0px;
+            }
+    
+            &-wrapper {
+                grid-template-columns: 1fr 45%;
+                grid-gap: 40px;
+                align-items: start;
+            }
+    
+            &-items {
+                grid-gap: 10px;
+            }
+    
+            &-item {
+                width: 100%;
+                gap: 16px;
+    
+                &-num {
+                    flex: 0 0 32px;
+                    font-size: 46px;
+                }
+    
+                &-text {
+                    font-size: 16px;
+                }
+    
+                
+                &-title {
+                    font-size: 26px;
+                }
+    
+                &-icon {
+                    width: 44px;
+                }
+            }
+
+            &-desc {
+                font-size: 12px;
+            }
+    
+            &-stickers {
+                padding: 28px 28px 16px;
+                border-radius: 14px;
+                gap:  8px 18px ;
+    
+                &-img {
+                    max-width: 54px;
+                }
+    
+                &-text {
+                    flex: 0 0 calc(100% - 54px - 18px);
+                    font-size: 15px;
+                }
+    
+                .button {
+                    max-width: 300px;
+                    margin: 0px auto;
+                    flex: 0 0 100%
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .newme {
+        .instruction {
+            padding: 44px 0px;
+    
+            h2.title {
+                font-size: 50px;
+                margin-bottom: 0px;
+            }
+    
+            &-wrapper {
+                grid-gap: 20px;
+            }
+    
+            &-items {
+                grid-gap: 10px;
+            }
+    
+            &-item {
+                gap: 10px;
+    
+                &-num {
+                    flex: 0 0 45px;
+                    font-size: 65px;
+                }
+    
+                &-text {
+                    font-size: 18px;
+                }
+    
+                
+                &-title {
+                    font-size: 36px;
+                }
+    
+                &-icon {
+                    width: 72px;
+                }
+            }
+
+            &-desc {
+                font-size: 14px;
+            }
+    
+            &-stickers {
+                padding: 40px 32px 22px;
+                border-radius: 20px;
+                gap:  10px 26px ;
+    
+                &-img {
+                    max-width: 74px;
+                }
+    
+                &-text {
+                    flex: 0 0 calc(100% - 74px - 26px);
+                    font-size: 20px;
+                }
+    
+                .button {
+                    max-width: 100%;
+                    flex: 0 0 100%
+                }
+            }
+        }
+    }
+}

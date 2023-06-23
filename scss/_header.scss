@@ -1,0 +1,242 @@
+.newme {
+    .header {
+        padding: 26px 0px 36px;
+        background: url('../img/header-bg.webp') no-repeat 48% 10%;
+        background-size: cover;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 22px;
+            margin-bottom: 20px;
+
+            img {
+                max-width: 150px;
+                transform: translate(0, -50px);
+                opacity: 0;
+                animation: show .3s linear forwards;
+            }
+        }
+
+        &-dates {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            transform: translate(0, 50px);
+            opacity: 0;
+            animation: show .3s .3s linear forwards;
+        }
+
+        &-title {
+            font-size: 32px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $accent;
+            font-weight: 800;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-self: start;
+            gap: 20px;
+            transform: translate(0, 50px);
+            opacity: 0;
+
+            animation: show .3s .6s linear forwards;
+
+            .persent {
+                max-width: max-content;
+                color: #fff;
+                background: $accent;
+                border-radius: 10px;
+                padding: 6px 12px;
+
+                &-value {
+                    display: flex;
+                    align-items: end;
+                    justify-content: start;
+                    font-weight: 400;
+                    font-size: 58px;
+                    line-height: 1;
+                    position: relative;
+                    max-width: max-content;
+
+                    &-symb {
+                        font-size: 38px;
+                        position: relative;
+                        bottom: 6px;
+                    }
+
+                    &-text {
+                        position: absolute;
+                        top: 10px;
+                        left: 2px;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+
+                &-text {
+                    font-size: 13px;
+                    text-transform: none;
+                    line-height: 1;
+                    font-weight: 400;
+                    max-width: 140px;
+                }
+            }
+        }
+
+        &-desc {
+            color: #fff;
+            font-size: 13px;
+            max-width: 140px;
+            margin: 8px 0px 66px;
+            transform: translate(0, 50px);
+            opacity: 0;
+        }
+
+        .button {
+            transform: translate(0, 50px);
+            opacity: 0;
+            animation: show .3s .9s linear forwards;
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .newme {
+        .header {
+            padding: 60px 0px 52px;
+            background: url('../img/header-bg.webp') no-repeat 30% 100%;
+            background-size: cover;
+    
+            .logo {
+                gap: 45px;
+                margin-bottom: 34px;
+    
+                img {
+                    max-width: 210px;
+                }
+            }
+    
+            &-dates {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+    
+            &-title {
+                font-size: 54px;
+                gap: 28px;
+                
+    
+                .persent {
+                    border-radius: 16px;
+                    padding: 12px 18px;
+    
+                    &-value {
+                        font-size: 94px;
+    
+                        &-symb {
+                            font-size: 58px;
+                            bottom: 8px;
+                        }
+    
+                        &-text {
+                            top: 16px;
+                            left: 2px;
+                            font-size: 22px;
+                        }
+                    }
+    
+                    &-text {
+                        font-size: 20px;
+                        max-width: 170px;
+                    }
+                }
+            }
+
+            &-titles {
+                display: flex;
+                align-items: end;
+                justify-content: start;
+                margin-bottom: 34px;
+            }
+    
+            &-desc {
+                color: #fff;
+                font-size: 13px;
+                max-width: 120px;
+                margin: 8px 0px 60px;
+                position: relative;
+                left: -60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .newme {
+        .header {
+            padding: 100px 0px 64px;
+            background: url('../img/header-bg.webp') no-repeat 30% 0%;
+            background-size: cover;
+    
+            .logo {
+                gap: 65px;
+                margin-bottom: 76px;
+    
+                img {
+                    max-width: 300px;
+                }
+            }
+    
+            &-dates {
+                font-size: 32px;
+                margin-bottom: 12px;
+            }
+    
+            &-title {
+                font-size: 74px;                
+    
+                .persent {
+                    border-radius: 22px;
+                    padding: 12px 25px;
+    
+                    &-value {
+                        font-size: 130px;
+    
+                        &-symb {
+                            font-size: 68px;
+                            bottom: 12px;
+                        }
+    
+                        &-text {
+                            top: 26px;
+                            left: 8px;
+                            font-size: 30px;
+                        }
+                    }
+    
+                    &-text {
+                        font-size: 28px;
+                        max-width: 230px;
+                    }
+                }
+            }
+
+            &-titles {
+                margin-bottom: 50px;
+            }
+    
+            &-desc {
+                font-size: 18px;
+                line-height: 25px;
+                max-width: 140px;
+                margin: 8px 0px 70px;
+                left: -80px;
+            }
+        }
+    }
+}

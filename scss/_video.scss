@@ -1,0 +1,21 @@
+.newme {
+    .products-video {
+        padding: 34px 0px 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .newme {
+        .products-video {
+            padding: 40px 0px 30px;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .newme {
+        .products-video {
+            padding: 60px 0px 42px;
+        }
+    }
+}
