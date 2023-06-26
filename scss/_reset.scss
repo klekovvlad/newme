@@ -24,3 +24,31 @@ a {
 li {
     list-style: none;
 }
+
+#widget_breadcrumb {
+    padding: 0px 12px;
+}
+
+.staticpage .contentRecommendationWidget {
+    margin-top: 15px;
+}
+
+#contentWrapper {
+    padding: 0;
+    max-width: 100%;
+    .col-12 {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #widget_breadcrumb {
+        padding: 0px 32px;
+    }
+}
+
+@media (min-width: 1250px) {
+    #widget_breadcrumb {
+        padding: 0px calc((100vw - 1250px) / 2);
+    }
+}
